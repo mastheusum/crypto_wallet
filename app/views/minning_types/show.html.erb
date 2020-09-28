@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<form>
+  <fieldset disabled>
+    <div class="form-group">
+      <%= label_tag @minning_type.class.human_attribute_name(:description) %>
+      <%= text_field_tag nil, @minning_type.description, class:"form-control" %>
+    </div>
+  
+    <div class="form-group">
+      <%= label_tag @minning_type.class.human_attribute_name(:acronym) %>
+      <%= text_field_tag nil, @minning_type.acronym, class:"form-control" %>
+    </div>
+  </fieldset>
+</form>
+
+<%= link_to t('links.edit'), edit_minning_type_path(@minning_type), class:"btn btn-primary" %> |
+<%= link_to t('links.back'), minning_types_path, class:"btn btn-secondary" %>

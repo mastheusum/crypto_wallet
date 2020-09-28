@@ -1,0 +1,23 @@
+pt-BR:
+  current_location: "Português do Brasil"
+  welcome: "Seja Bem-Vindo!!"
+  message:
+    welcome: "Esse é o Crypt Wallet para você cadastrar e acompanhar as suas criptomoedas."
+    menu: "Para começar selecione uma das opções abaixo:"
+    confirm: "Você tem certeza?"
+  hello: "Olá Mundo!"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    new: "Novo"
+    back: "Voltar"
+  new:
+    coin: "Nova Moeda"
+    minning_type: "Novo Tipo de Mineração"
+  editing:
+    coin: "Editando Moeda"
+    minning_type: "Editando Tipo de Mineração"
+  showing:
+    coin: "Mostrando Moeda"
+    minning_type: "Mostrando Tipo de Mineração"

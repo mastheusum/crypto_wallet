@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1><% MinningType.model_name.human(count: @minning_types.count ) %></h1>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th><%= @minning_types.human_attribute_name(:description) %></th>
+      <th><%= @minning_types.human_attribute_name(:acronym) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @minning_types.each do |minning_type| %>
+      <tr>
+        <td><%= minning_type.description %></td>
+        <td><%= minning_type.acronym %></td>
+        <td><%= link_to t('links.show'), minning_type %></td>
+        <td><%= link_to t('links.edit'), edit_minning_type_path(minning_type) %></td>
+        <td><%= link_to t('links.delete'), minning_type, method: :delete, data: { confirm: t('message.confirm') } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('new.minning_type'), new_minning_type_path, class:"btn btn-primary" %>
